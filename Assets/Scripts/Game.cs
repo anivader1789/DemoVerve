@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject light = GameObject.Find("Directional Light");
+        GameObject player = GameObject.Find("Player");
+        StartCoroutine(sunLightUpdate(light, player));
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    IEnumerator sunLightUpdate(GameObject directionalLight, GameObject player)
+    {
+        while(true)
+        {
+            directionalLight.transform.LookAt(player.transform);
+            yield return new WaitForSeconds(0.5f);
+        }
         
     }
 }
