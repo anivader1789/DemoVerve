@@ -20,6 +20,9 @@ public class Game : MonoBehaviour
         
     }
 
+
+    //Sun light follows player
+    //This creates the necessary sun light we need in our solar system
     IEnumerator sunLightUpdate(GameObject directionalLight, GameObject player)
     {
         while(true)
