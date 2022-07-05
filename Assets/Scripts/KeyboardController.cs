@@ -18,8 +18,7 @@ public class KeyboardController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        thrustVec.x = Input.GetAxis("Vertical");
-        thrustVec.z = Input.GetAxis("Horizontal");
+        thrustVec = transform.TransformDirection(Vector3.forward) * Input.GetAxis("Vertical") + transform.TransformDirection(Vector3.right) * Input.GetAxis("Horizontal");
         suitController.Pv_thrust = thurstAmount * thrustVec;
     }
 }

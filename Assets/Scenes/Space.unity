@@ -1761,4 +1761,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fe82b233a7bee4db9ced60ac24bf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thurstAmount: 10
+  thurstAmount: 1
