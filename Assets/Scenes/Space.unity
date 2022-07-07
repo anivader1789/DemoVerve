@@ -999,6 +999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c712f60b400105f4693d992428167f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Po_currentOrbitBody: {fileID: 0}
 --- !u!4 &1221229161
 Transform:
   m_ObjectHideFlags: 0
@@ -1990,9 +1991,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pv_thrust: {x: 0, y: 0, z: 0}
   pv_velocity: {x: 0, y: 0, z: 0}
-  playerCamera: {fileID: 9210579365101356417}
-  lookSpeed: 2
-  lookXLimit: 120
+  Po_playerCamera: {fileID: 9210579365101356417}
+  Pf_lookSpeed: 2
+  Pf_lookXLimit: 45
 --- !u!114 &9210579365893686008
 MonoBehaviour:
   m_ObjectHideFlags: 0
