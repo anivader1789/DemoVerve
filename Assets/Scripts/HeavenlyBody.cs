@@ -17,6 +17,6 @@ public class HeavenlyBody : MonoBehaviour
     {
         pos = transform.position;
         bodyName = gameObject.name;
-        gravityForce = transform.localScale.x * 2;
+        gravityForce = transform.localScale.x * 0;
     }
 }
