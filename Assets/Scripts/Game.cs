@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     [HideInInspector]
     public HeavenlyBody Po_currentOrbitBody;
 
+    private GameObject po_earth;
     private GameObject po_player;
 
     private float pf_orbitBodyDist = 0;
@@ -21,6 +22,7 @@ public class Game : MonoBehaviour
     {
         GameObject light = GameObject.Find("Directional Light");
         po_player = GameObject.Find("Player");
+        po_earth = GameObject.Find("Earth");
         StartCoroutine(sunLightUpdate(light));
         //StartCoroutine(orbitCheck());
     }
@@ -32,7 +34,7 @@ public class Game : MonoBehaviour
     {
         while(true)
         {
-            directionalLight.transform.LookAt(po_player.transform);
+            directionalLight.transform.LookAt(po_earth.transform);
             yield return new WaitForSeconds(0.5f);
         }
         

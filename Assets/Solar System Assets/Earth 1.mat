@@ -12,6 +12,7 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _NORMALMAP
+  - _OCCLUSIONMAP
   - _SPECULARHIGHLIGHTS_OFF
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
@@ -62,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a49a95328f034c3488823b9193858f4c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -94,7 +95,7 @@ Material:
     - _AlphaClip: 1
     - _Blend: 0
     - _BlendOp: 0
-    - _BumpScale: 10
+    - _BumpScale: 3
     - _ClearCoat: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -108,7 +109,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _OcclusionStrength: 0.881
+    - _OcclusionStrength: 0.816
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1

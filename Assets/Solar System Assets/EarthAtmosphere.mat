@@ -8,20 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EarthAtmosphere
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ValidKeywords:
-  - _SPECULAR_SETUP
-  - _SURFACE_TYPE_TRANSPARENT
+  m_Shader: {fileID: -6465566751694194690, guid: e0204353838da654596610f432e6d2ef,
+    type: 3}
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
-  disabledShaderPasses:
-  - DepthOnly
-  - SHADOWCASTER
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -84,6 +80,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
+    - _Atmos: 0.01
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -100,9 +97,11 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.315
+    - _Rim: 4.53
+    - _Smoothness: -0.46
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
@@ -110,7 +109,9 @@ Material:
     - _WorkflowMode: 0
     - _ZWrite: 0
     m_Colors:
+    - _AtmosColor: {r: 0.31532896, g: 0.35587126, b: 0.8603976, a: 0.6156863}
     - _BaseColor: {r: 0.45768067, g: 0.4977918, b: 0.8018868, a: 0.08627451}
+    - _Base_Color: {r: 0.10653258, g: 0.16675669, b: 0.3584906, a: 1}
     - _Color: {r: 0.45768058, g: 0.49779177, b: 0.8018868, a: 0.08627451}
     - _EmissionColor: {r: 0.29271626, g: 0.38053113, b: 1.0830501, a: 1}
     - _SpecColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
